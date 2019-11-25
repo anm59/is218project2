@@ -12,6 +12,11 @@ $registration_password = filter_input(INPUT_POST, 'registration_password');
 $questionName = filter_input(INPUT_POST, 'questionname');
 $questionBody = filter_input(INPUT_POST, 'questionbody');
 $questionSkills = filter_input(INPUT_POST, 'questionSkills');
+
+//email is  not supposed to be  empty
+if(empty($email)){
+    $email= 'email shouldn`t be empty';
+}
  ?>
 
 <! DOCTYPE html>
